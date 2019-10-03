@@ -1,0 +1,11 @@
+.gameName {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+body {
+    width: 100%;
+    background-image: url('http://www.mansfieldct.org/Schools/MMS/staff/baxter/New%20Light%20Powerpoint_files/slide0001_background.gif')
+
+}
