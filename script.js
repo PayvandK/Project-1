@@ -1,4 +1,4 @@
-var startPoints = 0
+var score = 0
 
 //ATLANTA FALCONS QUESTIONS
 
@@ -20,9 +20,10 @@ let fal100 = document.getElementById('cat11')
             inputValidator: (value) => {
                 return new Promise((resolve) => {
                     if (value === 'mercedesBenzStadium') {
-                        resolve('You are correct! :)')
+                        resolve('You are correct! :)'),
+                        score++
                     } else {
-                        resolve('The correct answer was Mercedes-Benz Stadium :(')
+                        resolve('The correct answer was Mercedes-Benz Stadium! :(')
                     }
                 })
             } 
@@ -51,9 +52,10 @@ let fal100 = document.getElementById('cat11')
             inputValidator: (value) => {
                 return new Promise((resolve) => {
                     if (value === 'michaelVick') {
-                        resolve('You are correct! :)')
+                        resolve('You are correct! :)'),
+                        score++
                     } else {
-                        resolve('The correct answer was Michael Vick :(')
+                        resolve('The correct answer was Michael Vick! :(')
                     }
                 })
             } 
@@ -64,3 +66,101 @@ let fal100 = document.getElementById('cat11')
 
         }
     })
+    let fal300 = document.getElementById('cat13')
+    fal300.addEventListener('click', function () {
+        const { value: superbowl } =  Swal.fire({
+            timer: 10000,
+            title: 'Superbowl LI, in which the Falcons devastatingly lost in overtime to the New England Patriots, was played in which city?',
+            input: 'select',
+            inputOptions: {
+                minneapolis: 'What is Minneapolis?',
+                houston: 'What is Houston?',
+                santaClara: 'What is Santa Clara?',
+                arizona: 'What is Arizona?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                return new Promise((resolve) => {
+                    if (value === 'houston') {
+                        resolve('You are correct! :)'),
+                        score++
+                    } else {
+                        resolve('The correct answer was Houston! :(')
+                    }
+                })
+            } 
+        })
+
+        if (superbowl) {
+            Swal.fire('You selected: ' + superbowl)
+
+        }
+    })
+    let fal400 = document.getElementById('cat14')
+    fal400.addEventListener('click', function () {
+        const { value: points } =  Swal.fire({
+            timer: 10000,
+            title: 'This ex-Falcon has the second most points scored by an NFL player in history',
+            input: 'select',
+            inputOptions: {
+                mAnderson: 'Who is Morten Anderson?',
+                mBryant: 'Who is Matt Bryant?',
+                jJones: 'Who is Julio Jones?',
+                mRyan: 'Who is Matt Ryan?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                return new Promise((resolve) => {
+                    if (value === 'mAnderson') {
+                        resolve('You are correct! :)')
+                        score++
+                    } else {
+                        resolve('The correct answer was Morten Anderson! :(')
+                    }
+                })
+            } 
+        })
+
+        if (points) {
+            Swal.fire('You selected: ' + points)
+
+        }
+    })
+    let fal500 = document.getElementById('cat15')
+    fal500.addEventListener('click', function () {
+        const { value: training } =  Swal.fire({
+            timer: 10000,
+            title: 'This city is home to the Falcons\' off-season training and practice facility',
+            input: 'select',
+            inputOptions: {
+                rome: 'What is Rome, GA?',
+                macon: 'What is Macon, GA?',
+                floweryBranch: 'What is Flowery Branch, GA?',
+                athens: 'What is Athens, GA?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                return new Promise((resolve) => {
+                    if (value === 'floweryBranch') {
+                        resolve('You are correct! :)')
+                        score++
+                    } else {
+                        resolve('The correct answer was Flowery Branch! :(')
+                    }
+                })
+            } 
+        })
+
+        if (training) {
+            Swal.fire('You selected: ' + training)
+
+        }
+    })
+
+    // ATLANTA BRAVES QUESTIONS
