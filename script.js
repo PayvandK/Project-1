@@ -158,7 +158,7 @@ let fal100 = document.getElementById('cat11')
         })
 
         if (training) {
-            Swal.fire('You selected: ' + training)
+            Swal.fire('You selected: ' + training) 
 
         }
     })
