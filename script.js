@@ -1,6 +1,6 @@
 var score = 0
 
-//ATLANTA FALCONS QUESTIONS
+//ATLANTA FALCONS QUESTIONS (done)
 
 let fal100 = document.getElementById('cat11')
     fal100.addEventListener('click', function () {
