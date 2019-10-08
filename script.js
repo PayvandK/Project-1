@@ -273,19 +273,19 @@ let fal100 = document.getElementById('cat11')
             } 
         })
     })
-    let brav100 = document.getElementById('cat21')
-    brav100.addEventListener('click', function (e) {
+    let brav300 = document.getElementById('cat32')
+    brav300.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
         const { value: stadium } =  Swal.fire({
             timer: 10000,
-            title: 'This stadium was the home of the Braves until the opening of Turner Field in 1997',
+            title: 'This current Braves phenom won Rookie of the Year in 2018',
             input: 'select',
             inputOptions: {
-                suntrustField: 'What is Suntrust Field?',
-                chipperLand: 'What is Chipper Jones Land?',
-                afcStadium: 'What is Atlanta Fulton County Stadium?',
-                georgiaDome: 'What is the Georgia Dome?'
+                cJones: 'Who is Chipper Jones?',
+                oAlbies: 'Who is Ozzie Albies?',
+                fFreeman: 'Who is Freddie Freeman?',
+                acunajr: 'Who is Ronald Acuña Jr?'
             },
             inputPlaceholder: 'Select a question',
             allowOutsideClick: false,
@@ -294,14 +294,49 @@ let fal100 = document.getElementById('cat11')
                 unansweredQuestion -= 1
                 return new Promise((resolve) => {
                     
-                    if (value === 'afcStadium') {
+                    if (value === 'acunajr') {
                         score++
-                        resolve('You are correct! :)'),
+                        resolve('Correct! 300 points! :)'),
                         checkWinLose()
                     } else {
-                        resolve('The correct answer was Atlanta Fulton County Stadium! :(')
+                        resolve('The correct answer was Ronald Acuña Jr! :(')
                         e.target.style.color = 'black',
-                        checkWinLose(),
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
+    let brav400 = document.getElementById('cat42')
+    brav400.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'This former Brave, until recently, was the owner of the record for most homeruns in a career ',
+            input: 'select',
+            inputOptions: {
+                ruth: 'Who is Babe Ruth?',
+                aaron: 'Who is Hank Aaron?',
+                cox: 'Who is Bobby Cox?',
+                bonds: 'Who is Barry Bonds?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'aaaron') {
+                        score++
+                        resolve('Correct! 400 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was Hank Aaron! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
                     }
                 })
                 
