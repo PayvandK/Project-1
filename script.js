@@ -2,6 +2,7 @@ var score = 0
 let unansweredQuestion = 25
 
 //ATLANTA FALCONS QUESTIONS (done)
+
 const checkWinLose = () => {
     if(unasweredQuestion < 1 && score >= 5000) {
         alert('Game Over, YOU WIN!!!')
@@ -33,7 +34,7 @@ let fal100 = document.getElementById('cat11')
                     
                     if (value === 'mercedesBenzStadium') {
                         score++
-                        resolve('You are correct! :)'),
+                        resolve('Correct! 100 points! :)'),
                         checkWinLose()
                     } else {
                         resolve('The correct answer was Mercedes-Benz Stadium! :(')
@@ -48,8 +49,8 @@ let fal100 = document.getElementById('cat11')
         if (stadium) {
             Swal.fire('You selected: ' + stadium)
 
-        }
-    })
+    }
+})
     let fal200 = document.getElementById('cat12')
     fal200.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
@@ -71,7 +72,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'michaelVick') {
-                        resolve('You are correct! :)'),
+                        resolve('Correct! 200 points! :)'),
                         score++
                         checkWinLose()
                     } else {
@@ -108,7 +109,7 @@ let fal100 = document.getElementById('cat11')
             inputValidator: (value) => {
                 return new Promise((resolve) => {
                     if (value === 'houston') {
-                        resolve('You are correct! :)'),
+                        resolve('Correct! 300 points! :)'),
                         score++
                         checkWinLose()
                     } else {
@@ -145,7 +146,7 @@ let fal100 = document.getElementById('cat11')
             inputValidator: (value) => {
                 return new Promise((resolve) => {
                     if (value === 'mAnderson') {
-                        resolve('You are correct! :)')
+                        resolve('Correct! 400 points! :)')
                         score++
                         checkWinLose()
                     } else {
@@ -182,7 +183,7 @@ let fal100 = document.getElementById('cat11')
             inputValidator: (value) => {
                 return new Promise((resolve) => {
                     if (value === 'floweryBranch') {
-                        resolve('You are correct! :)')
+                        resolve('Correct! 500 points! :)')
                         score++
                         checkWinLose()
                     } else {
@@ -201,3 +202,109 @@ let fal100 = document.getElementById('cat11')
     })
 
     // ATLANTA BRAVES QUESTIONS
+
+    let brav100 = document.getElementById('cat12')
+    brav100.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'This stadium was the home of the Braves until the opening of Turner Field in 1997',
+            input: 'select',
+            inputOptions: {
+                suntrustField: 'What is Suntrust Field?',
+                chipperLand: 'What is Chipper Jones Land?',
+                afcStadium: 'What is Atlanta Fulton County Stadium?',
+                georgiaDome: 'What is the Georgia Dome?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'afcStadium') {
+                        score++
+                        resolve('Correct! 100 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was Atlanta Fulton County Stadium! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
+    let brav200 = document.getElementById('cat22')
+    brav200.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'This is the name of the Braves\' new ugly mascot',
+            input: 'select',
+            inputOptions: {
+                homer: 'What is Homer?',
+                phillyFanatic: 'What is the Philly Fanatic?',
+                blooper: 'What is Blooper?',
+                steve: 'What is Steve?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'blooper') {
+                        score++
+                        resolve('Correct! 200 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was Blooper! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
+    let brav100 = document.getElementById('cat21')
+    brav100.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'This stadium was the home of the Braves until the opening of Turner Field in 1997',
+            input: 'select',
+            inputOptions: {
+                suntrustField: 'What is Suntrust Field?',
+                chipperLand: 'What is Chipper Jones Land?',
+                afcStadium: 'What is Atlanta Fulton County Stadium?',
+                georgiaDome: 'What is the Georgia Dome?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'afcStadium') {
+                        score++
+                        resolve('You are correct! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was Atlanta Fulton County Stadium! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
