@@ -1,5 +1,10 @@
 body {
-    background-color: blue;
+    width: 99%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('http://www.mansfieldct.org/Schools/MMS/staff/baxter/New%20Light%20Powerpoint_files/slide0001_background.gif');
 }
 .gameName {
     display: flex;
@@ -13,13 +18,27 @@ body {
 }
 .categories {
     display: flex;
-    flex-direction: row;
     font-size: 45px;
     padding: 5px;
-    border: solid black 1px;
-    justify-content: space-around;
+    margin-bottom: 0;
+    border: solid black 5px;
+    justify-content: space-between;
 }
-
+#Team1 {
+    color: black;
+}
+#Team2 {
+    color: red;
+}
+#Team3 {
+    color: white;
+}
+#Team4 {
+    color: red;
+}
+#Team5 {
+    color:black;
+}
 .board {
     display: grid;
     width: 100%;
@@ -30,4 +49,157 @@ body {
     font-size: 80px;
     border: solid black 5px;
     text-align: center;
+    color: red;
+}
+#cat12 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: red;
+}
+#cat13 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: red;
+}
+#cat14 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: red;
+}
+#cat15 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: red;
+}
+#cat21 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: white;
+}
+#cat22 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: white;
+}
+#cat23 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: white;
+}
+#cat24 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: white;
+}
+#cat25 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: white;
+}
+#cat31 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: gold;
+}
+#cat32 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: gold;
+}
+#cat33 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: gold;
+}
+#cat34 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: gold;
+}
+#cat35 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: gold;
+}
+#cat41 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: white;
+}
+#cat42 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: white;
+}
+#cat43 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: white;
+}
+#cat44 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: white;
+}
+#cat45 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: white;    
+}
+#cat51 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: red;
+}
+#cat52 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: red;
+}
+#cat53 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: red;
+}
+#cat54 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: red;
+}
+#cat55 {
+    font-size: 80px;
+    border: solid black 5px;
+    text-align: center;
+    color: red;
+}
+.instructions {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    color: gold;
 }
