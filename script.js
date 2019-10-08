@@ -203,7 +203,7 @@ let fal100 = document.getElementById('cat11')
 
     // ATLANTA BRAVES QUESTIONS
 
-    let brav100 = document.getElementById('cat12')
+    let brav100 = document.getElementById('cat21')
     brav100.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
@@ -273,7 +273,7 @@ let fal100 = document.getElementById('cat11')
             } 
         })
     })
-    let brav300 = document.getElementById('cat32')
+    let brav300 = document.getElementById('cat23')
     brav300.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
@@ -308,8 +308,8 @@ let fal100 = document.getElementById('cat11')
             } 
         })
     })
-    let brav400 = document.getElementById('cat42')
-    brav400.addEventListener('click', function (e) {,
+    let brav400 = document.getElementById('cat24')
+    brav400.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
         const { value: stadium } =  Swal.fire({
@@ -329,7 +329,7 @@ let fal100 = document.getElementById('cat11')
                 unansweredQuestion -= 1
                 return new Promise((resolve) => {
                     
-                    if (value === 'aaaron') {
+                    if (value === 'aaron') {
                         score++
                         resolve('Correct! 400 points! :)'),
                         checkWinLose()
@@ -343,7 +343,7 @@ let fal100 = document.getElementById('cat11')
             } 
         })
     })
-    let brav500 = document.getElementById('cat52')
+    let brav500 = document.getElementById('cat25')
     brav500.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
@@ -378,3 +378,78 @@ let fal100 = document.getElementById('cat11')
             } 
         })
     })
+    
+    // ATLANTA UNITED QUESTIONS
+
+
+    let unit100 = document.getElementById('cat31')
+    unit100.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'This United star was deemed the MLS MVP in 2018',
+            input: 'select',
+            inputOptions: {
+                tata: 'Who is Tata Martino?',
+                josef: 'Who is Josef Martinez?',
+                villalba: 'Who is Hector Villalba?',
+                miggy: 'Who is Miguel Almiròn?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'josef') {
+                        score++
+                        resolve('Correct! 100 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was Josef Martinez! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
+    let unit200 = document.getElementById('cat32')
+    unit200.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'Each soccer team in a game plays this many players on the field at a time',
+            input: 'select',
+            inputOptions: {
+                eleven: 'What is 11?',
+                nine: 'What is 9?',
+                twentyfive: 'What is 25?',
+                seventeen: 'What is 17?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'eleven') {
+                        score++
+                        resolve('Correct! 200 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was 11! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
+    
