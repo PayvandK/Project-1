@@ -1,9 +1,19 @@
 var score = 0
+let unansweredQuestion = 25
 
 //ATLANTA FALCONS QUESTIONS (done)
-
+const checkWinLose = () => {
+    if(unasweredQuestion < 1 && score >= 5000) {
+        alert('Game Over, YOU WIN!!!')
+    }
+    if(unasweredQuestion < 1 && score < 5000) {
+        alert('Game Over, try again :(')
+    }
+}
 let fal100 = document.getElementById('cat11')
-    fal100.addEventListener('click', function () {
+    fal100.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
         const { value: stadium } =  Swal.fire({
             timer: 10000,
             title: 'This is the name of the Falcons\' new state-of-the-art stadium',
@@ -18,14 +28,20 @@ let fal100 = document.getElementById('cat11')
             allowOutsideClick: false,
             showCancelButton: false,
             inputValidator: (value) => {
+                unansweredQuestion -= 1
                 return new Promise((resolve) => {
+                    
                     if (value === 'mercedesBenzStadium') {
-                        resolve('You are correct! :)'),
                         score++
+                        resolve('You are correct! :)'),
+                        checkWinLose()
                     } else {
                         resolve('The correct answer was Mercedes-Benz Stadium! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
                     }
                 })
+                
             } 
         })
 
@@ -35,7 +51,9 @@ let fal100 = document.getElementById('cat11')
         }
     })
     let fal200 = document.getElementById('cat12')
-    fal200.addEventListener('click', function () {
+    fal200.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+
         const { value: disgrace } =  Swal.fire({
             timer: 10000,
             title: 'This ex Falcons player was disgraced from the NFL after allegations of dog fighting on his property',
@@ -51,11 +69,15 @@ let fal100 = document.getElementById('cat11')
             showCancelButton: false,
             inputValidator: (value) => {
                 return new Promise((resolve) => {
+                    
                     if (value === 'michaelVick') {
                         resolve('You are correct! :)'),
                         score++
+                        checkWinLose()
                     } else {
                         resolve('The correct answer was Michael Vick! :(')
+                        e.target.style.color = 'black'
+                        checkWinLose()
                     }
                 })
             } 
@@ -67,7 +89,9 @@ let fal100 = document.getElementById('cat11')
         }
     })
     let fal300 = document.getElementById('cat13')
-    fal300.addEventListener('click', function () {
+    fal300.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+
         const { value: superbowl } =  Swal.fire({
             timer: 10000,
             title: 'Superbowl LI, in which the Falcons devastatingly lost in overtime to the New England Patriots, was played in which city?',
@@ -86,8 +110,11 @@ let fal100 = document.getElementById('cat11')
                     if (value === 'houston') {
                         resolve('You are correct! :)'),
                         score++
+                        checkWinLose()
                     } else {
                         resolve('The correct answer was Houston! :(')
+                        e.target.style.color = 'black'
+                        checkWinLose()
                     }
                 })
             } 
@@ -99,7 +126,9 @@ let fal100 = document.getElementById('cat11')
         }
     })
     let fal400 = document.getElementById('cat14')
-    fal400.addEventListener('click', function () {
+    fal400.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+
         const { value: points } =  Swal.fire({
             timer: 10000,
             title: 'This ex-Falcon has the second most points scored by an NFL player in history',
@@ -118,8 +147,11 @@ let fal100 = document.getElementById('cat11')
                     if (value === 'mAnderson') {
                         resolve('You are correct! :)')
                         score++
+                        checkWinLose()
                     } else {
                         resolve('The correct answer was Morten Anderson! :(')
+                        e.target.style.color = 'black'
+                        checkWinLose()
                     }
                 })
             } 
@@ -131,7 +163,9 @@ let fal100 = document.getElementById('cat11')
         }
     })
     let fal500 = document.getElementById('cat15')
-    fal500.addEventListener('click', function () {
+    fal500.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+
         const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'This city is home to the Falcons\' off-season training and practice facility',
@@ -150,8 +184,11 @@ let fal100 = document.getElementById('cat11')
                     if (value === 'floweryBranch') {
                         resolve('You are correct! :)')
                         score++
+                        checkWinLose()
                     } else {
                         resolve('The correct answer was Flowery Branch! :(')
+                        e.target.style.color = 'black'
+                        checkWinLose()
                     }
                 })
             } 
