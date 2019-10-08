@@ -1,5 +1,6 @@
 .grid {
-    display: grid;
+    display: flex;
+    position: fixed;
     grid-template: repeat(5, 1fr) / repeat(5, 1fr);
     width: 100%;
     height: 700px;
@@ -14,28 +15,64 @@ body {
     color: gold;
     font-size: 100px;
     text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+.categories {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    height:140px;
 }
 .a {
+    display: flex;
     background-color: blue;
     color: white;
     border-radius: 5px;
     border: solid black 2px; 
+    text-align: center;
+    align-items: center;
     
 }.b {
+    display: flex;
     background-color: blue;
     color: white;
     border-radius: 5px;
     border: solid black 2px; 
+    text-align: center;
 }
 .c {
+    display:flex;
     background-color: blue;
     color: white;
     border-radius: 5px;
     border: solid black 2px; 
+    text-align: center;
 }
 .d {
     background-color: blue;
     color: white;
     border-radius: 5px;
-    border: solid black 2px;    
+    border: solid black 2px;
+    text-align: center;    
+}
+.e {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: solid black 2px;
+    text-align: center; 
+}
+.questions {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    height:140px;
+}
+.f {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: solid black 2px;
+    text-align: center; 
 }
