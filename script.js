@@ -309,7 +309,7 @@ let fal100 = document.getElementById('cat11')
         })
     })
     let brav400 = document.getElementById('cat42')
-    brav400.addEventListener('click', function (e) {
+    brav400.addEventListener('click', function (e) {,
         e.target.style.backgroundColor = 'black'
        
         const { value: stadium } =  Swal.fire({
