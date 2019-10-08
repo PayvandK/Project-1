@@ -343,3 +343,38 @@ let fal100 = document.getElementById('cat11')
             } 
         })
     })
+    let brav500 = document.getElementById('cat52')
+    brav500.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'Former Braves manager Bobby Cox currently holds the MLB record for most times doing this',
+            input: 'select',
+            inputOptions: {
+                flyballs: 'What is catching fly balls?',
+                thrownOut: 'What is getting thrown out of a game?',
+                manager: 'What is winning manager of the year?',
+                strikeout: 'What is striking out?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'thrownOut') {
+                        score++
+                        resolve('Correct! 500 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was getting thrown out of a game! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
