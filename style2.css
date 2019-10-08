@@ -22,7 +22,7 @@ body {
     padding: 5px;
     margin-bottom: 0;
     border: solid black 5px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #Team1 {
     display: flex;
