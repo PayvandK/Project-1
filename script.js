@@ -301,7 +301,7 @@ let fal100 = document.getElementById('cat11')
                     } else {
                         resolve('The correct answer was Atlanta Fulton County Stadium! :(')
                         e.target.style.color = 'black',
-                        checkWinLose()
+                        checkWinLose(),
                     }
                 })
                 
