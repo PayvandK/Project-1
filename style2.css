@@ -25,18 +25,28 @@ body {
     justify-content: space-between;
 }
 #Team1 {
+    display: flex;
+    align-items: center;
     color: black;
 }
 #Team2 {
+    display: flex;
+    align-items: center;
     color: red;
 }
 #Team3 {
+    display: flex;
+    align-items: center;
     color: white;
 }
 #Team4 {
+    display: flex;
+    align-items: center;
     color: red;
 }
 #Team5 {
+    display: flex;
+    align-items: center;
     color:black;
 }
 .board {
