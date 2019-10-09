@@ -522,3 +522,182 @@ let fal100 = document.getElementById('cat11')
             } 
         })
     })
+    let unit500 = document.getElementById('cat35')
+    unit500.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'After a stellar career in Atlanta, Miguel Almiron was picked up in 2018 by this European team ',
+            input: 'select',
+            inputOptions: {
+                manu: 'What is Manchester United?',
+                tott: 'What is Tottenham?',
+                chels: 'What is Chelsea?',
+                new: 'What is Newcastle United?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'new') {
+                        score++
+                        resolve('Correct! 500 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was Newcastle United! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
+
+    // ATLANTA HAWKS QUESTIONS
+
+
+    let hawk100 = document.getElementById('cat41')
+    hawk100.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'This is the name of the Hawks\' new stadium',
+            input: 'select',
+            inputOptions: {
+                sfa: 'What is State Farm Arena?',
+                alls: 'What is Allstate Arena?',
+                geico: 'What is Geico Center?',
+                pro: 'What is Progressive Field?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'sfa') {
+                        score++
+                        resolve('Correct! 100 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was State Farm Arena! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
+    let hawk200 = document.getElementById('cat42')
+    hawk200.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'The Hawks have won the NBA Championship this many times',
+            input: 'select',
+            inputOptions: {
+                two: 'What is 2?',
+                zero: 'What is 0?',
+                one: 'What is 1?',
+                four: 'What is 4?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'one') {
+                        score++
+                        resolve('Correct! 200 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was 1! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
+    let hawk300 = document.getElementById('cat43')
+    hawk300.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: '',
+            input: 'select',
+            inputOptions: {
+                tata: '?',
+                josef: 'Who is Josef Martinez?',
+                villalba: 'Who is Hector Villalba?',
+                miggy: 'Who is Miguel Almiròn?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'josef') {
+                        score++
+                        resolve('Correct! 100 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was Josef Martinez! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
+    let hawk400 = document.getElementById('cat44')
+    hawk400.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'This 5\'7\" Hawks point guard won a slam dunk contest in the 80\'s',
+            input: 'select',
+            inputOptions: {
+                webb: 'Who is Spud Webb?',
+                muggsy: 'Who is Muggsy Bogues?',
+                blaylock: 'Who is Mookie Blaylock?',
+                hakeem: 'Who is Hakeem Olajuwon?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'webb') {
+                        score++
+                        resolve('Correct! 200 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was Spud Webb! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
