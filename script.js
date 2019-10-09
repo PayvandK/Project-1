@@ -883,13 +883,13 @@ let fal100 = document.getElementById('cat11')
        
         const { value: training } =  Swal.fire({
             timer: 10000,
-            title: '',
+            title: 'Georgia Tech has won this many National Championships',
             input: 'select',
             inputOptions: {
-                tata: 'Who is Tata Martino?',
-                josef: 'Who is Josef Martinez?',
-                villalba: 'Who is Hector Villalba?',
-                miggy: 'Who is Miguel Almiròn?'
+                zero: 'What is 0?',
+                one: 'What is 1?',
+                four: 'What is 4?',
+                eight: 'What is 8?'
             },
             inputPlaceholder: 'Select a question',
             allowOutsideClick: false,
@@ -898,12 +898,12 @@ let fal100 = document.getElementById('cat11')
                 unansweredQuestion -= 1
                 return new Promise((resolve) => {
                     
-                    if (value === 'josef') {
+                    if (value === 'four') {
                         score++
                         resolve('Correct! 300 points! :)'),
                         checkWinLose()
                     } else {
-                        resolve('The correct answer was Josef Martinez! :(')
+                        resolve('The correct answer was 4! :(')
                         e.target.style.color = 'black',
                         checkWinLose()
                     }
@@ -922,13 +922,13 @@ let fal100 = document.getElementById('cat11')
        
         const { value: training } =  Swal.fire({
             timer: 10000,
-            title: 'This United star was deemed the MLS MVP in 2018',
+            title: 'Georgia State\'s football team recently won their first big game against this sec team',
             input: 'select',
             inputOptions: {
-                tata: 'Who is Tata Martino?',
-                josef: 'Who is Josef Martinez?',
-                villalba: 'Who is Hector Villalba?',
-                miggy: 'Who is Miguel Almiròn?'
+                tenn: 'What is The University of Tennessee?',
+                uga: 'What is The University of Georgia?',
+                fla: 'What is The University of Florida?',
+                ala: 'What is The University of Alabama?'
             },
             inputPlaceholder: 'Select a question',
             allowOutsideClick: false,
@@ -937,12 +937,12 @@ let fal100 = document.getElementById('cat11')
                 unansweredQuestion -= 1
                 return new Promise((resolve) => {
                     
-                    if (value === 'josef') {
+                    if (value === 'tenn') {
                         score++
                         resolve('Correct! 400 points! :)'),
                         checkWinLose()
                     } else {
-                        resolve('The correct answer was Josef Martinez! :(')
+                        resolve('The correct answer was The University of Tennessee! :(')
                         e.target.style.color = 'black',
                         checkWinLose()
                     }
@@ -961,13 +961,13 @@ let fal100 = document.getElementById('cat11')
        
         const { value: training } =  Swal.fire({
             timer: 10000,
-            title: 'This United star was deemed the MLS MVP in 2018',
+            title: 'This Georgia school has won the most National Chamionships',
             input: 'select',
             inputOptions: {
-                tata: 'Who is Tata Martino?',
-                josef: 'Who is Josef Martinez?',
-                villalba: 'Who is Hector Villalba?',
-                miggy: 'Who is Miguel Almiròn?'
+                gt: 'Who is Georgia Tech?',
+                uga: 'Who is UGA?',
+                state: 'Who is Georgia State?',
+                southern: 'Who is Georgia Southern?'
             },
             inputPlaceholder: 'Select a question',
             allowOutsideClick: false,
@@ -976,12 +976,12 @@ let fal100 = document.getElementById('cat11')
                 unansweredQuestion -= 1
                 return new Promise((resolve) => {
                     
-                    if (value === 'josef') {
+                    if (value === 'southern') {
                         score++
                         resolve('Correct! 500 points! :)'),
                         checkWinLose()
                     } else {
-                        resolve('The correct answer was Josef Martinez! :(')
+                        resolve('The correct answer was Georgia Southern! :(')
                         e.target.style.color = 'black',
                         checkWinLose()
                     }
