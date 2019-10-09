@@ -637,13 +637,13 @@ let fal100 = document.getElementById('cat11')
        
         const { value: stadium } =  Swal.fire({
             timer: 10000,
-            title: '',
+            title: 'The Hawks last won their division in this year',
             input: 'select',
             inputOptions: {
-                tata: '?',
-                josef: 'Who is Josef Martinez?',
-                villalba: 'Who is Hector Villalba?',
-                miggy: 'Who is Miguel Almiròn?'
+                otoo: 'What is 2002?',
+                ayteen: 'What is 2018?',
+                nynate: 'What is 1998?',
+                fifteen: 'What is 2015?'
             },
             inputPlaceholder: 'Select a question',
             allowOutsideClick: false,
@@ -652,12 +652,12 @@ let fal100 = document.getElementById('cat11')
                 unansweredQuestion -= 1
                 return new Promise((resolve) => {
                     
-                    if (value === 'josef') {
+                    if (value === 'fifteen') {
                         score++
-                        resolve('Correct! 100 points! :)'),
+                        resolve('Correct! 300 points! :)'),
                         checkWinLose()
                     } else {
-                        resolve('The correct answer was Josef Martinez! :(')
+                        resolve('The correct answer was 2015! :(')
                         e.target.style.color = 'black',
                         checkWinLose()
                     }
@@ -693,6 +693,41 @@ let fal100 = document.getElementById('cat11')
                         checkWinLose()
                     } else {
                         resolve('The correct answer was Spud Webb! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
+    let hawk500 = document.getElementById('cat45')
+    hawk500.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'The Hawks played in this city before moving to Atlanta in 1968',
+            input: 'select',
+            inputOptions: {
+                ny: 'What is New York?',
+                sf: 'What is San Francisco?',
+                mil: 'What is Milwaukee?',
+                stl: 'What is St. Louis?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'stl') {
+                        score++
+                        resolve('Correct! 500 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was St. Louis! :(')
                         e.target.style.color = 'black',
                         checkWinLose()
                     }
