@@ -4,10 +4,10 @@ let unansweredQuestion = 25
 //ATLANTA FALCONS QUESTIONS (done)
 
 const checkWinLose = () => {
-    if(unasweredQuestion < 1 && score >= 5000) {
+    if(unansweredQuestion < 1 && score >= 5000) {
         alert('Game Over, YOU WIN!!!')
     }
-    if(unasweredQuestion < 1 && score < 5000) {
+    if(unansweredQuestion < 1 && score < 5000) {
         alert('Game Over, try again :(')
     }
 }
@@ -207,7 +207,7 @@ let fal100 = document.getElementById('cat11')
     brav100.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'This stadium was the home of the Braves until the opening of Turner Field in 1997',
             input: 'select',
@@ -236,13 +236,17 @@ let fal100 = document.getElementById('cat11')
                 })
                 
             } 
-        })
+        }) 
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
     let brav200 = document.getElementById('cat22')
     brav200.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'This is the name of the Braves\' new ugly mascot',
             input: 'select',
@@ -272,12 +276,16 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
     let brav300 = document.getElementById('cat23')
     brav300.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training} =  Swal.fire({
             timer: 10000,
             title: 'This current Braves phenom won Rookie of the Year in 2018',
             input: 'select',
@@ -307,12 +315,16 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
     let brav400 = document.getElementById('cat24')
     brav400.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'This former Brave, until recently, was the owner of the record for most homeruns in a career ',
             input: 'select',
@@ -342,12 +354,16 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
     let brav500 = document.getElementById('cat25')
     brav500.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'Former Braves manager Bobby Cox currently holds the MLB record for most times doing this',
             input: 'select',
@@ -377,6 +393,10 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
     
     // ATLANTA UNITED QUESTIONS
@@ -386,7 +406,7 @@ let fal100 = document.getElementById('cat11')
     unit100.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'This United star was deemed the MLS MVP in 2018',
             input: 'select',
@@ -416,12 +436,16 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
     let unit200 = document.getElementById('cat32')
     unit200.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'Each soccer team in a game plays this many players on the field at a time',
             input: 'select',
@@ -451,12 +475,16 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
     let unit300 = document.getElementById('cat33')
     unit300.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'Atlanta United beat this team to take home the MLS Cup in 2018',
             input: 'select',
@@ -486,12 +514,16 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
     let unit400 = document.getElementById('cat34')
     unit400.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'Including the 2018 MLS Cup, Atlanta United have won this many trophies since their inception',
             input: 'select',
@@ -521,12 +553,16 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
     let unit500 = document.getElementById('cat35')
     unit500.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'After a stellar career in Atlanta, Miguel Almiron was picked up in 2018 by this European team ',
             input: 'select',
@@ -556,6 +592,10 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
 
     // ATLANTA HAWKS QUESTIONS
@@ -565,7 +605,7 @@ let fal100 = document.getElementById('cat11')
     hawk100.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'This is the name of the Hawks\' new stadium',
             input: 'select',
@@ -595,12 +635,16 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
     let hawk200 = document.getElementById('cat42')
     hawk200.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'The Hawks have won the NBA Championship this many times',
             input: 'select',
@@ -630,12 +674,16 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
     let hawk300 = document.getElementById('cat43')
     hawk300.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'The Hawks last won their division in this year',
             input: 'select',
@@ -665,12 +713,16 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
     let hawk400 = document.getElementById('cat44')
     hawk400.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'This 5\'7\" Hawks point guard won a slam dunk contest in the 80\'s',
             input: 'select',
@@ -689,7 +741,7 @@ let fal100 = document.getElementById('cat11')
                     
                     if (value === 'webb') {
                         score++
-                        resolve('Correct! 200 points! :)'),
+                        resolve('Correct! 400 points! :)'),
                         checkWinLose()
                     } else {
                         resolve('The correct answer was Spud Webb! :(')
@@ -700,12 +752,16 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
     let hawk500 = document.getElementById('cat45')
     hawk500.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: stadium } =  Swal.fire({
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'The Hawks played in this city before moving to Atlanta in 1968',
             input: 'select',
@@ -735,4 +791,206 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
+    })
+
+    // COLLEGE SPORTS QUESTIONS
+
+    let cos100 = document.getElementById('cat51')
+    cos100.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: training } =  Swal.fire({
+            timer: 10000,
+            title: 'This is the only Georgia Bulldog to win the Heisman Trophy',
+            input: 'select',
+            inputOptions: {
+                gurley: 'Who is Todd Gurley?',
+                fromm: 'Who is Jake Fromm?',
+                walker: 'Who is Herschel Walker?',
+                staff: 'Who is Matt Stafford?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'walker') {
+                        score++
+                        resolve('Correct! 100 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was Herschel Walker! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
+    })
+    let cos200 = document.getElementById('cat52')
+    cos200.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: training } =  Swal.fire({
+            timer: 10000,
+            title: 'This is the year in which UGA won its only National Championship',
+            input: 'select',
+            inputOptions: {
+                forto: 'What is 1942?',
+                aydayt: 'What is 1988?',
+                senteen: 'What is 2017?',
+                eightyone: 'What is 1981?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'eightyone') {
+                        score++
+                        resolve('Correct! 200 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was 1981! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
+    })
+    let cos300 = document.getElementById('cat53')
+    cos300.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: training } =  Swal.fire({
+            timer: 10000,
+            title: '',
+            input: 'select',
+            inputOptions: {
+                tata: 'Who is Tata Martino?',
+                josef: 'Who is Josef Martinez?',
+                villalba: 'Who is Hector Villalba?',
+                miggy: 'Who is Miguel Almiròn?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'josef') {
+                        score++
+                        resolve('Correct! 300 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was Josef Martinez! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
+    })
+    let cos400 = document.getElementById('cat54')
+    cos400.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: training } =  Swal.fire({
+            timer: 10000,
+            title: 'This United star was deemed the MLS MVP in 2018',
+            input: 'select',
+            inputOptions: {
+                tata: 'Who is Tata Martino?',
+                josef: 'Who is Josef Martinez?',
+                villalba: 'Who is Hector Villalba?',
+                miggy: 'Who is Miguel Almiròn?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'josef') {
+                        score++
+                        resolve('Correct! 400 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was Josef Martinez! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
+    })
+    let cos500 = document.getElementById('cat55')
+    cos500.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: training } =  Swal.fire({
+            timer: 10000,
+            title: 'This United star was deemed the MLS MVP in 2018',
+            input: 'select',
+            inputOptions: {
+                tata: 'Who is Tata Martino?',
+                josef: 'Who is Josef Martinez?',
+                villalba: 'Who is Hector Villalba?',
+                miggy: 'Who is Miguel Almiròn?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'josef') {
+                        score++
+                        resolve('Correct! 500 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was Josef Martinez! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+        if (training) {
+            Swal.fire('You selected: ' + training) 
+
+        }
     })
