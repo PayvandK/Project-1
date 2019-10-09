@@ -987,7 +987,7 @@ let fal100 = document.getElementById('cat11')
                     }
                 })
                 
-            } 1
+            } 
         })
         if (training) {
             Swal.fire('You selected: ' + training) 
