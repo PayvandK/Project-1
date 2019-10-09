@@ -978,7 +978,7 @@ let fal100 = document.getElementById('cat11')
                     
                     if (value === 'southern') {
                         score++
-                        resolve('Correct! 500 points! :)'),
+                        resolve('Correct! 500 points! :)'), 
                         checkWinLose()
                     } else {
                         resolve('The correct answer was Georgia Southern! :(')
