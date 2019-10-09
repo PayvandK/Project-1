@@ -487,3 +487,38 @@ let fal100 = document.getElementById('cat11')
             } 
         })
     })
+    let unit400 = document.getElementById('cat34')
+    unit400.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'Including the 2018 MLS Cup, Atlanta United have won this many trophies since their inception',
+            input: 'select',
+            inputOptions: {
+                two: 'What is 2?',
+                four: 'What is 4?',
+                one: 'What is 1?',
+                seven: 'What is 7?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'four') {
+                        score++
+                        resolve('Correct! 400 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was 4! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
