@@ -1,5 +1,5 @@
 var score = 0
-let unansweredQuestion = 25
+let unansweredQuestion = 24
 
 //ATLANTA FALCONS QUESTIONS (done)
 
