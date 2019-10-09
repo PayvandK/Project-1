@@ -5,10 +5,10 @@ let unansweredQuestion = 24
 
 const checkWinLose = () => {
     if(unansweredQuestion < 1 && score >= 5000) {
-        alert('Game Over, YOU WIN!!!')
+        alert('GAME OVER, YOU WIN!!!')
     }
     if(unansweredQuestion < 1 && score < 5000) {
-        alert('Game Over, try again :(')
+        alert('GAME OVER, TRY AGAIN :(')
     }
 }
 let fal100 = document.getElementById('cat11')
@@ -69,6 +69,7 @@ let fal100 = document.getElementById('cat11')
             allowOutsideClick: false,
             showCancelButton: false,
             inputValidator: (value) => {
+                unansweredQuestion -= 1
                 return new Promise((resolve) => {
                     
                     if (value === 'michaelVick') {
@@ -107,6 +108,7 @@ let fal100 = document.getElementById('cat11')
             allowOutsideClick: false,
             showCancelButton: false,
             inputValidator: (value) => {
+                unansweredQuestion -= 1
                 return new Promise((resolve) => {
                     if (value === 'houston') {
                         resolve('Correct! 300 points! :)'),
@@ -144,6 +146,7 @@ let fal100 = document.getElementById('cat11')
             allowOutsideClick: false,
             showCancelButton: false,
             inputValidator: (value) => {
+                unansweredQuestion -= 1
                 return new Promise((resolve) => {
                     if (value === 'mAnderson') {
                         resolve('Correct! 400 points! :)')
@@ -181,6 +184,7 @@ let fal100 = document.getElementById('cat11')
             allowOutsideClick: false,
             showCancelButton: false,
             inputValidator: (value) => {
+                unansweredQuestion -= 1
                 return new Promise((resolve) => {
                     if (value === 'floweryBranch') {
                         resolve('Correct! 500 points! :)')
