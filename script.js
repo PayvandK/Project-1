@@ -16,7 +16,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: stadium } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This is the name of the Falcons\' new state-of-the-art stadium',
             input: 'select',
             inputOptions: {
@@ -56,7 +56,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
 
         const { value: disgrace } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This ex Falcons player was disgraced from the NFL after allegations of dog fighting on his property',
             input: 'select',
             inputOptions: {
@@ -94,7 +94,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
 
         const { value: superbowl } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'Superbowl LI, in which the Falcons devastatingly lost in overtime to the New England Patriots, was played in which city?',
             input: 'select',
             inputOptions: {
@@ -131,7 +131,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
 
         const { value: points } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This ex-Falcon has the second most points scored by an NFL player in history',
             input: 'select',
             inputOptions: {
@@ -168,7 +168,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
 
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This city is home to the Falcons\' off-season training and practice facility',
             input: 'select',
             inputOptions: {
@@ -208,7 +208,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This stadium was the home of the Braves until the opening of Turner Field in 1997',
             input: 'select',
             inputOptions: {
@@ -247,7 +247,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This is the name of the Braves\' new ugly mascot',
             input: 'select',
             inputOptions: {
@@ -286,7 +286,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training} =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This current Braves phenom won Rookie of the Year in 2018',
             input: 'select',
             inputOptions: {
@@ -325,7 +325,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This former Brave, until recently, was the owner of the record for most homeruns in a career ',
             input: 'select',
             inputOptions: {
@@ -364,7 +364,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'Former Braves manager Bobby Cox currently holds the MLB record for most times doing this',
             input: 'select',
             inputOptions: {
@@ -407,7 +407,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This United star was deemed the MLS MVP in 2018',
             input: 'select',
             inputOptions: {
@@ -446,7 +446,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'Each soccer team in a game plays this many players on the field at a time',
             input: 'select',
             inputOptions: {
@@ -485,7 +485,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'Atlanta United beat this team to take home the MLS Cup in 2018',
             input: 'select',
             inputOptions: {
@@ -524,7 +524,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'Including the 2018 MLS Cup, Atlanta United have won this many trophies since their inception',
             input: 'select',
             inputOptions: {
@@ -563,7 +563,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'After a stellar career in Atlanta, Miguel Almiron was picked up in 2018 by this European team ',
             input: 'select',
             inputOptions: {
@@ -606,7 +606,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This is the name of the Hawks\' new stadium',
             input: 'select',
             inputOptions: {
@@ -645,7 +645,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'The Hawks have won the NBA Championship this many times',
             input: 'select',
             inputOptions: {
@@ -684,7 +684,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'The Hawks last won their division in this year',
             input: 'select',
             inputOptions: {
@@ -723,7 +723,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This 5\'7\" Hawks point guard won a slam dunk contest in the 80\'s',
             input: 'select',
             inputOptions: {
@@ -762,7 +762,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'The Hawks played in this city before moving to Atlanta in 1968',
             input: 'select',
             inputOptions: {
@@ -804,7 +804,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This is the only Georgia Bulldog to win the Heisman Trophy',
             input: 'select',
             inputOptions: {
@@ -843,7 +843,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This is the year in which UGA won its only National Championship',
             input: 'select',
             inputOptions: {
@@ -882,7 +882,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'Georgia Tech has won this many National Championships',
             input: 'select',
             inputOptions: {
@@ -921,7 +921,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'Georgia State\'s football team recently won their first big game against this sec team',
             input: 'select',
             inputOptions: {
@@ -960,7 +960,7 @@ let fal100 = document.getElementById('cat11')
         e.target.style.backgroundColor = 'black'
        
         const { value: training } =  Swal.fire({
-            timer: 10000,
+            timer: 8000,
             title: 'This Georgia school has won the most National Chamionships',
             input: 'select',
             inputOptions: {
