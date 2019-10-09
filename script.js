@@ -33,7 +33,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'mercedesBenzStadium') {
-                        score++
+                        score += 100
                         resolve('Correct! 100 points! :)'),
                         checkWinLose()
                     } else {
@@ -73,7 +73,7 @@ let fal100 = document.getElementById('cat11')
                     
                     if (value === 'michaelVick') {
                         resolve('Correct! 200 points! :)'),
-                        score++
+                        score += 200
                         checkWinLose()
                     } else {
                         resolve('The correct answer was Michael Vick! :(')
@@ -110,7 +110,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     if (value === 'houston') {
                         resolve('Correct! 300 points! :)'),
-                        score++
+                        score += 300
                         checkWinLose()
                     } else {
                         resolve('The correct answer was Houston! :(')
@@ -147,7 +147,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     if (value === 'mAnderson') {
                         resolve('Correct! 400 points! :)')
-                        score++
+                        score += 400
                         checkWinLose()
                     } else {
                         resolve('The correct answer was Morten Anderson! :(')
@@ -184,7 +184,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     if (value === 'floweryBranch') {
                         resolve('Correct! 500 points! :)')
-                        score++
+                        score += 500
                         checkWinLose()
                     } else {
                         resolve('The correct answer was Flowery Branch! :(')
@@ -225,7 +225,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'afcStadium') {
-                        score++
+                        score += 100
                         resolve('Correct! 100 points! :)'),
                         checkWinLose()
                     } else {
@@ -264,7 +264,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'blooper') {
-                        score++
+                        score += 200
                         resolve('Correct! 200 points! :)'),
                         checkWinLose()
                     } else {
@@ -303,7 +303,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'acunajr') {
-                        score++
+                        score += 300
                         resolve('Correct! 300 points! :)'),
                         checkWinLose()
                     } else {
@@ -342,7 +342,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'aaron') {
-                        score++
+                        score += 400
                         resolve('Correct! 400 points! :)'),
                         checkWinLose()
                     } else {
@@ -381,7 +381,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'thrownOut') {
-                        score++
+                        score += 500
                         resolve('Correct! 500 points! :)'),
                         checkWinLose()
                     } else {
@@ -424,7 +424,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'josef') {
-                        score++
+                        score += 100
                         resolve('Correct! 100 points! :)'),
                         checkWinLose()
                     } else {
@@ -463,7 +463,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'eleven') {
-                        score++
+                        score += 200
                         resolve('Correct! 200 points! :)'),
                         checkWinLose()
                     } else {
@@ -502,7 +502,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'portland') {
-                        score++
+                        score += 300
                         resolve('Correct! 300 points! :)'),
                         checkWinLose()
                     } else {
@@ -541,7 +541,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'four') {
-                        score++
+                        score += 400
                         resolve('Correct! 400 points! :)'),
                         checkWinLose()
                     } else {
@@ -580,7 +580,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'new') {
-                        score++
+                        score += 500
                         resolve('Correct! 500 points! :)'),
                         checkWinLose()
                     } else {
@@ -623,7 +623,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'sfa') {
-                        score++
+                        score += 100
                         resolve('Correct! 100 points! :)'),
                         checkWinLose()
                     } else {
@@ -662,7 +662,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'one') {
-                        score++
+                        score += 200
                         resolve('Correct! 200 points! :)'),
                         checkWinLose()
                     } else {
@@ -701,7 +701,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'fifteen') {
-                        score++
+                        score += 300
                         resolve('Correct! 300 points! :)'),
                         checkWinLose()
                     } else {
@@ -740,7 +740,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'webb') {
-                        score++
+                        score += 400
                         resolve('Correct! 400 points! :)'),
                         checkWinLose()
                     } else {
@@ -779,7 +779,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'stl') {
-                        score++
+                        score += 500
                         resolve('Correct! 500 points! :)'),
                         checkWinLose()
                     } else {
@@ -821,7 +821,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'walker') {
-                        score++
+                        score += 100
                         resolve('Correct! 100 points! :)'),
                         checkWinLose()
                     } else {
@@ -860,7 +860,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'eightyone') {
-                        score++
+                        score += 200
                         resolve('Correct! 200 points! :)'),
                         checkWinLose()
                     } else {
@@ -899,7 +899,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'four') {
-                        score++
+                        score += 300
                         resolve('Correct! 300 points! :)'),
                         checkWinLose()
                     } else {
@@ -938,7 +938,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'tenn') {
-                        score++
+                        score += 400
                         resolve('Correct! 400 points! :)'),
                         checkWinLose()
                     } else {
@@ -977,7 +977,7 @@ let fal100 = document.getElementById('cat11')
                 return new Promise((resolve) => {
                     
                     if (value === 'southern') {
-                        score++
+                        score += 500
                         resolve('Correct! 500 points! :)'), 
                         checkWinLose()
                     } else {
