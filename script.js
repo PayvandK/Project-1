@@ -451,4 +451,39 @@ let fal100 = document.getElementById('cat11')
                 
             } 
         })
-    }) balls
+    })
+    let unit300 = document.getElementById('cat33')
+    unit300.addEventListener('click', function (e) {
+        e.target.style.backgroundColor = 'black'
+       
+        const { value: stadium } =  Swal.fire({
+            timer: 10000,
+            title: 'Atlanta United beat this team to take home the MLS Cup in 2018',
+            input: 'select',
+            inputOptions: {
+                orlando: 'Who are the Orlando City?',
+                newyork: 'Who are the New York Red Bulls?',
+                losangeles: 'Who are the LA Galaxy?',
+                portland: 'Who are the Portland Timbers?'
+            },
+            inputPlaceholder: 'Select a question',
+            allowOutsideClick: false,
+            showCancelButton: false,
+            inputValidator: (value) => {
+                unansweredQuestion -= 1
+                return new Promise((resolve) => {
+                    
+                    if (value === 'portland') {
+                        score++
+                        resolve('Correct! 300 points! :)'),
+                        checkWinLose()
+                    } else {
+                        resolve('The correct answer was the Portland Timbers! :(')
+                        e.target.style.color = 'black',
+                        checkWinLose()
+                    }
+                })
+                
+            } 
+        })
+    })
