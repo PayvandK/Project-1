@@ -959,7 +959,7 @@ let fal100 = document.getElementById('cat11')
     cos500.addEventListener('click', function (e) {
         e.target.style.backgroundColor = 'black'
        
-        const { value: training } =  Swal.fire({ 
+        const { value: training } =  Swal.fire({
             timer: 10000,
             title: 'This Georgia school has won the most National Chamionships',
             input: 'select',
@@ -987,7 +987,7 @@ let fal100 = document.getElementById('cat11')
                     }
                 })
                 
-            } 
+            } 1
         })
         if (training) {
             Swal.fire('You selected: ' + training) 
